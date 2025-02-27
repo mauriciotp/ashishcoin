@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "npx hardhat test --network hardhat"
+    "test": "npx hardhat test --network hardhat",
+    "deploy:dev": "npx hardhat ignition deploy ./ignition/modules/AshishCoin.ts --network local",
+    "deploy:prod": "npx hardhat ignition deploy ./ignition/modules/AshishCoin.ts --network sepolia --verify"
   },
   "keywords": [],
   "author": "",
